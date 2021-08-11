@@ -1,0 +1,232 @@
+@font-face {
+    font-family: (raleway), sans-serif;
+    src: url("fonts.googleapis.com/css2? family= Raleway:wght@500 & display=swap") format('ttf');
+}
+body {
+    font-family: raleway; /* Nom de police */
+    font-weight: 500; /* Epaisseur de la police de carctère 500px */
+    width: 80%; /* Largeur */
+    margin: auto; /* Super-propriété de marge automatique */
+    /*border: 1px solid black; /* Super-propriété de bordure*/
+}
+.search {
+    display: flex; /* les blocs se placent par défaut côte à côte */
+    border: 2px solid #d9d9d9; /* Super-propriété de bordure */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    margin: 10px; /* Super-propriété de marge 10px */
+}
+.sinscrire {
+    color: #0065FC; /* Couleur */
+    font-weight: bolder; /* le texte sera en gras */
+}
+.hebergement {
+    color: #0065FC; /* Couleur */
+    background-color: #F2F2F2; /* Indiquer une couleur de fond */
+}
+.svg {
+    width: 20px; /* Largeur */
+    height: 20px; /* la hauteur du bloc 20px */
+}
+.svg_min {
+    width: 12px; /* Largeur */
+    height: 12px; /* la hauteur du bloc 12px */
+}
+h1 {
+    font-size: 1.4em; /* Indique la taille du texte */
+}
+/* HEADER */
+
+header {
+    display: flex; /*les blocs se placent par défaut côte à côte*/
+    flex-direction: row; /* Organisés sur une ligne (par défaut) */
+    justify-content: space-between; /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+    align-items: baseline; /* Alignés sur la ligne de base (semblable à flex-start) */
+    margin-top: -16px; /* Marge en haut */
+}
+header img {
+    position: relative; /* Texte se décale */
+    top: 20px; /* A 20px en haut */
+}
+header div {
+    display: flex; /* les blocs se placent par défaut côte à côte */
+    flex-direction: row; /* Organisés sur une ligne (par défaut) */
+    list-style-type: none; /* Qui permet de retirer l'image ronde servant de puce */
+    align-items: baseline; /* Alignés sur la ligne de base (semblable à flex-start) */
+}
+header ul {
+    display: flex; /* les blocs se placent par défaut côte à côte */
+    justify-content: space-around; /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+    flex-direction: row; /* Positionnement sur une ligne (par défaut) */
+    list-style-type: none; /* Qui permet de retirer l'image ronde servant de puce */
+}
+header li {
+    border-top: 3px solid rgba(0, 0, 0, 0); /* diférente bordure du haut en ligne noir solide */
+    padding-top: 35px; /* marge intérieure en haut en px */
+    display: flex; /* les blocs se placent par défaut côte à côte */
+    width: 8em; /* Largeur (Sachant que 1em est un texte a une taille normale) */
+}
+header li a:hover /* Quand la souris est sur le lien changement d'aspect */
+{
+    color: #0065FC; /* Couleur */
+}
+header li:hover /* Quand la souris est sur le lien changement d'aspect */
+{
+    border-top: 3px solid #0065FC; /* Mettre des bordures différentes en haut du cadre */
+}
+header a {
+    text-decoration: none; /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
+    color: black; /* Couleur */
+    margin-right: 10px; /* marge extérieure à droite */
+}
+.register {
+    color: #0065FC; /* Couleur */
+    font-weight: bold; /* Epaisseur de la police de carctère en gras */
+}
+/* NAVIGATION */
+
+.nav_form {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    justify-content: flex-start; /* Eléments alignés au début */
+    height: 40px; /* Hauteur */
+}
+form img {
+    background-color: #f2f2f2; /* Indiquer une couleur de fond */
+    padding: 14px 14px 14px 14px; /* Marge intérieure */
+    border-radius: 1em 0 0 1em; /* Bordure arrondie */
+}
+input {
+    border: none; /* Super-propriété de bordure */
+    font-weight: 700; /* Epaisseur de la police de carctère 700px */
+}
+#search {
+    border: 1px solid #F2F2F2; /* Super-propriété de bordure */
+}
+.form_summ {
+    border-radius: 0 1em 1em 0; /* Bordure arrondie */
+    background-color: #0065FC; /* Indiquer une couleur de fond */
+    color: #fff; /*Couleur*/
+}
+/* DEBUT SECTION FILTRE */
+
+.filters {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    align-items: center; /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+.category-head {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+}
+.icontextfilters {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    border: 2px solid #d9d9d9; /* Super-propriété de bordure */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    margin: 10px; /* Marge en haut */
+    justify-content: space-between; /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+}
+.container {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    justify-content: center; /*Pour changer l'alignement horizontal les éléments sont alignés au centre */
+    flex-wrap: wrap; /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
+    flex-direction: row; /* Positionner verticalement organisés sur une ligne */
+}
+.filtre {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    justify-content: space-between; /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+    max-width: 60%; /* largeur maximale 60%, dimensions « limites » pour que notre site s'adapte aux différentes résolutions d'écran */
+    font-weight: bold; /* le texte sera en gras */
+    margin-top: 50px; /* Marge extérieure en haut 50px */
+}
+.iconefilter{
+    background-color: #DEEBFF;
+    margin: -12px 10px -12px -12px;
+    padding: 12px;
+    border-radius: 50%;
+}
+.filtre_sel {
+    display: flex; /*Les blocs se placent par défaut côte à côte */
+    align-items: center; /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+    flex-wrap: nowrap; /* lorsqu'ils n'ont plus la place les blocs, pas de retour à la ligne (par défaut) */
+    margin-left: 30px; /* Marge extérieure à gauche 30px */
+    border: 2px solid #F2F2F2; /* Super-propriété de bordure */
+    border-radius: 200px; /* Bordure arrondie */
+    text-decoration: none; /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
+    color: black; /* Couleur */
+    max-height: 38px; /* Hauteur maximale pour s'adapter aux différentes résolutions d'écran */
+}
+.f4 {
+    min-width: fit-content; /* largeur minimale pour s'adapter aux différentes résolutions d'écran */
+}
+.filtre_sel img {
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    background-color: #DEEBFF; /* Indiquer une couleur de fond */
+    border-radius: 100%; /* Bordure arrondie */
+}
+
+.filtre_sel p {
+    padding: 0 10px 0 10px; /* Marge intérieure */
+}
+.filtre a:hover /* Quand la souris est sur le lien changement d'aspect */
+{
+    color: #0065FC; /* Couleur */
+}
+/*FIN DE SECTION DES FILTRES*/
+
+/*DEBUT SECTION INFORMATION*/
+.info{
+    display: flex;
+    align-items: center; /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+.iconinfo {
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    padding: 3px 8px;
+    color: #0065FC;
+    font-size: 12px;
+}
+.annonces-container{
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+}
+.populaires:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+/*DEBUT DE LA SECTION 3*/
+
+.activites {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    align-items: center; /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+    +++border: 2px solid #d9d9d9; /* Super-propriété de bordure */+++
+    +++border-radius: 20px; /* Bordure arrondie */+++
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    margin: 10px; /* Marge en haut */
+    justify-content: space-between; /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+    +++background-color: #F2F2F2; /* Indiquer une couleur de fond */+++
+    }
+
+aside{
+    position: relative; /* Texte se décale */
+    right: 10px; /* A 20px en haut */
+}
+.activitesection {
+    color: black;
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    flex-wrap: wrap; /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
+    border: 2px solid #d9d9d9; /* Super-propriété de bordure */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    margin: 10px; /* Marge en haut */
+    justify-content: space-between; /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+    background-color: #F2F2F2; /* Indiquer une couleur de fond */
+  }
+footer {
+    display: flex; /* Les blocs se placent par défaut côte à côte */
+    flex-wrap: wrap; /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
+    border: 2px solid #d9d9d9; /* Super-propriété de bordure */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 10px 10px 10px 10px; /* Marge intérieure */
+    margin: 10px; /* Marge en haut */
+    justify-content: space-between; /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+    background-color: #F2F2F2; /* Indiquer une couleur de fond */
+}

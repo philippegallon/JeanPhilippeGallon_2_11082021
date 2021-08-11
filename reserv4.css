@@ -1,0 +1,909 @@
+@font-face {
+  font-family: (raleway), sans-serif;
+  src: url("fonts.googleapis.com/css2? family= Raleway:wght@500 & display=swap") format("ttf");
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+  search {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  conteneur_block_hebergements {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+}
+
+/* General */
+
+html,
+body {
+  font-family: raleway, Arial, Helvetica, sans-serif;
+  /* Nom de police */
+  font-weight: 600;
+  /* Epaisseur de la police de carctère 500px */
+  margin: auto;
+  /* Super-propriété de marge automatique */
+}
+
+body {
+  margin: auto;
+  width: 1400px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flexCentre {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  justify-content: center;
+  /* Alignés au centre */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+
+.flexAround {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  justify-content: space-around;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+
+.flexBetween {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+
+.flexColumnCentre {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  flex-direction: column;
+  /* Organisés sur une colonne */
+  justify-content: center;
+  /* Alignés au centre */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+
+.flexColumnAround {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  flex-direction: column;
+  /* Organisés sur une colonne */
+  justify-content: space-around;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+}
+
+.decorationNone {
+  text-decoration: none;
+  /* Ne pas souligner le texte */
+}
+
+.bordureNone {
+  border: none;
+  /* Super-propriété de bordure */
+}
+
+.texteGras {
+  font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
+}
+
+.colorBleu {
+  color: #0065fc;
+  /* Couleur */
+}
+
+.colorBleuClair {
+  color: #deebff;
+  /* Couleur */
+}
+
+/* Recherches */
+
+#search {
+  border: 1px solid #f2f2f2;
+  /* Super-propriété de bordure */
+}
+
+.search {
+  display: flex;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  width: 38%;
+  height: 55px;
+  justify-content: space-between;
+}
+
+.mapmarker {
+  background-color: #F2F2F2;
+  padding: 17px 18px 18px 18px;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 20px;
+}
+
+.research {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchbutton {
+  justify-content: right;
+  color: white;
+  background-color: #0065FC;
+  border-radius: 0px 20px 20px 0px;
+  font-size: medium;
+  padding: 15px;
+}
+
+.searchfield {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-size: medium;
+  padding: 2px 2px 2px 20px;
+}
+
+.sinscrire {
+  color: #0065fc;
+  /* Couleur */
+  font-weight: bolder;
+  /* le texte sera en gras */
+}
+
+.hebergement {
+  color: #0065fc;
+  /* Couleur */
+  background-color: #f2f2f2;
+  /* Indiquer une couleur de fond */
+}
+
+.svg {
+  width: 20px;
+  /* Largeur */
+  height: 20px;
+  /* la hauteur du bloc 20px */
+}
+
+.svg_min {
+  width: 12px;
+  /* Largeur */
+  height: 12px;
+  /* la hauteur du bloc 12px */
+}
+
+h1 {
+  font-size: 1.4em;
+  /* Indique la taille du texte */
+}
+
+/* Header */
+
+header {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  flex-direction: row;
+  /* Organisés sur une ligne (par défaut) */
+  justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+  align-items: baseline;
+  /* Alignés sur la ligne de base (semblable à flex-start) */
+  margin-top: -16px;
+  /* Marge en haut */
+}
+
+header img {
+  position: relative;
+  /* Texte se décale */
+  top: 20px;
+  /* A 20px en haut */
+}
+
+header div {
+  display: flex;
+  /* les blocs se placent par défaut côte à côte */
+  flex-direction: row;
+  /* Organisés sur une ligne (par défaut) */
+  list-style-type: none;
+  /* Qui permet de retirer l'image ronde servant de puce */
+  align-items: baseline;
+  /* Alignés sur la ligne de base (semblable à flex-start) */
+}
+
+header ul {
+  display: flex;
+  /* les blocs se placent par défaut côte à côte */
+  justify-content: space-around;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+  flex-direction: row;
+  /* Positionnement sur une ligne (par défaut) */
+  list-style-type: none;
+  /* Qui permet de retirer l'image ronde servant de puce */
+}
+
+header li {
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  /* diférente bordure du haut en ligne noir solide */
+  padding-top: 35px;
+  /* marge intérieure en haut en px */
+  display: flex;
+  /* les blocs se placent par défaut côte à côte */
+  width: 8em;
+  /* Largeur (Sachant que 1em est un texte a une taille normale) */
+}
+
+header li a:hover
+
+/* Quand la souris est sur le lien changement d'aspect */
+  {
+  color: #0065fc;
+  /* Couleur */
+}
+
+header li:hover
+
+/* Quand la souris est sur le lien changement d'aspect */
+  {
+  border-top: 3px solid #0065fc;
+  /* Mettre des bordures différentes en haut du cadre */
+}
+
+header a {
+  text-decoration: none;
+  /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
+  color: black;
+  /* Couleur */
+  margin-right: 10px;
+  /* marge extérieure à droite */
+}
+
+.register {
+  color: #0065fc;
+  /* Couleur */
+  font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
+}
+
+/* Navigation */
+
+.nav_form {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  justify-content: flex-start;
+  /* Eléments alignés au début */
+  height: 40px;
+  /* Hauteur */
+}
+
+form img {
+  background-color: #f2f2f2;
+  /* Indiquer une couleur de fond */
+  padding: 14px 14px 14px 14px;
+  /* Marge intérieure */
+  border-radius: 1em 0 0 1em;
+  /* Bordure arrondie */
+}
+
+input {
+  border: none;
+  /* Super-propriété de bordure */
+  font-weight: 700;
+  /* Epaisseur de la police de carctère 700px */
+}
+
+.form_summ {
+  border-radius: 0 1em 1em 0;
+  /* Bordure arrondie */
+  background-color: #0065fc;
+  /* Indique une couleur de fond */
+  color: #fff;
+  /*Couleur*/
+}
+
+/* Debut section filtre */
+
+.filters {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+}
+
+.category-head {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+}
+
+.filterdescription {
+  color: black;
+  /* Couleur */
+  font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
+}
+
+.icontextfilters {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  border: 2px solid #d9d9d9;
+  /* Super-propriété de bordure */
+  border-radius: 20px;
+  /* Bordure arrondie */
+  padding: 10px 10px 10px 10px;
+  /* Marge intérieure */
+  margin: 10px;
+  /* Marge en haut */
+  justify-content: space-between;
+  /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  color: black;
+  /* Couleur noir */
+  font-weight: bold;
+}
+
+/* Hebergements */
+
+.sizeHebergements {
+  flex-wrap: wrap;
+  flex: 2;
+  /* Deux fois 200% plus de taille que l'élément .sizePopulaires */
+  height: 650px;
+  /* la hauteur du bloc */
+  margin-right: 20px;
+  /* marge extérieure à droite */
+  border-radius: 10px;
+  /* Bordure arrondie */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+}
+
+.star {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  color: #0065fc;
+  /* Couleur */
+  margin-bottom: 10px;
+}
+
+.star_white {
+  color: #f2f2f2;
+  /* Couleur */
+}
+
+h3 {
+  margin: 10px 0px 0px 0px;
+}
+.conteneur_block_hebergements {
+  display: flex;
+  /*Les blocs se placent par défaut côte à côte */
+  flex-direction: column;
+  /* Positionnement sur une colonne */
+  justify-content: flex-start;
+  /* Eléments alignés au début */
+  padding: 30px;
+  width: 60%;
+  /* Largeur */
+  height: auto;
+  /* la hauteur du bloc automatique */
+  border-radius: 20px;
+  /* Bordure arrondie */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+}
+
+.hebergement_contener:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.hebergement_contener {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  flex-wrap: wrap;
+  /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
+  justify-content: space-between;
+}
+
+.heberg_texte {
+  padding: 0px 0px 0px 10px;
+}
+
+.hebergements_miniature {
+  background-color: white;
+  width: 30%;
+  padding: 4px 4px 4px 4px;
+  border-radius: 25px 25px 25px 25px;
+  margin: 10px 0px 10px 0px;
+  color: black;
+  box-shadow: 5px 5px 10px -10px #deebff;
+  font-size: medium;
+  box-sizing: border-box;
+}
+
+.conteneur_block {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  justify-content: space-between;
+  /* Eléments alignés au début */
+  align-items: stretch;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  flex-direction: row;
+  /* Positionnement sur une ligne (par défaut) */
+  margin-bottom: 10px;
+  /* Marge extérieure en bas */
+  margin-top: 10px;
+  /* Marge intérieure en haut  */
+  width: 100%;
+  /* Largeur */
+  height: auto;
+  /* la hauteur du bloc automatique */
+  flex-wrap: wrap;
+}
+
+.eHebergements {
+  width: 30%;
+  /* Largeur */
+  height: auto;
+  /* la hauteur du bloc automatique */
+  background-color: white;
+  /* Indique une couleur de fond */
+  padding: 1%;
+  border-radius: 20px;
+  /* Bordure arrondie */
+}
+
+.cubeDetailsHebergements {
+  width: 95%;
+  /* Largeur */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+}
+
+.imgHebergements {
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: left;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 120px;
+  /* la hauteur du bloc */
+  border-radius: 20px 20px 0 0;
+  /* Bordure arrondie */
+}
+
+.imgHebergements1 {
+  background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.imgHebergements2 {
+  background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+.imgHebergements3 {
+  background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+.imgHebergements4 {
+  background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+
+.imgHebergements5 {
+  background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+.imgHebergements6 {
+  background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+.afficher_plus {
+  color: black;
+  /* Couleur */
+  font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+/* Les plus populaires */
+
+.imagespopulaires {
+  width: 40%;
+  /* Largeur */
+  border-radius: 10px 0px 0px 10px;
+  /* Bordure arrondie */
+  margin: 0% 5% 0% 0%;
+  /* Marge en haut */
+  background-size: cover;
+  background-position: center;
+  /* Positionnement de l'image de fond = centrer */
+}
+
+.imgPopulaires1 {
+  background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.imgPopulaires2 {
+  background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+.imgPopulaires3 {
+  background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+.texte_populaires {
+  width: 60%;
+}
+
+.box1 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.populaires_miniature {
+  display: flex;
+  background-color: white;
+  /* width: 100%; */
+  height: auto;
+  padding: 5px;
+  /* background-size: cover; */
+  background-position: 10px 50px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 20px 0px;
+  color: black;
+  /* Couleur */
+  box-shadow: 5px 5px 10px #deebff;
+  font-size: medium;
+}
+
+.populaire_contener {
+
+  padding: 30px;
+  width: 27%;
+  /* Largeur */
+  height: auto;
+  /* la hauteur du bloc automatique */
+  border-radius: 20px;
+  /* Bordure arrondie */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+}
+
+.populaire_contener:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.sizePopulaires {
+  flex: 1;
+  /* Une fois 100% plus de taille que l'élément .sizeHebergements */
+  height: 650px;
+  /* la hauteur du bloc */
+  margin-left: 20px;
+  /* Marge extérieure à gauche 30px */
+  border-radius: 10px;
+  /* Bordure arrondie */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+}
+
+/* Filtres */
+
+.filtre {
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  justify-content: space-between;
+  /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  max-width: 60%;
+  /* largeur maximale 60%, dimensions « limites » pour que notre site s'adapte aux différentes résolutions d'écran */
+  font-weight: bold;
+  /* le texte sera en gras */
+  margin-top: 50px;
+  /* Marge extérieure en haut 50px */
+}
+
+.iconefilter {
+  background-color: #deebff;
+  /* Indique une couleur de fond */
+  margin: -12px 10px -12px -12px;
+  /* Marge différentes s'applique aux quatre côtés du bloc, en bas, à gauche et à droite */
+  padding: 12px;
+  border-radius: 50%;
+  /* Bordure arrondie */
+  color: #0065FC;
+}
+
+.filtre_sel P {
+  display: flex;
+  /*Les blocs se placent par défaut côte à côte */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  flex-wrap: nowrap;
+  /* lorsqu'ils n'ont plus la place les blocs, pas de retour à la ligne (par défaut) */
+  margin-left: 30px;
+  /* Marge extérieure à gauche 30px */
+  padding: 0 10px 0 10px;
+  /* Marge intérieure */
+  border: 2px solid #f2f2f2;
+  /* Super-propriété de bordure */
+  border-radius: 200px;
+  /* Bordure arrondie */
+  text-decoration: none;
+  /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
+  color: black;
+  /* Couleur */
+  max-height: 38px;
+  /* Hauteur maximale pour s'adapter aux différentes résolutions d'écran */
+}
+
+.f4 {
+  min-width: fit-content;
+  /* largeur minimale pour s'adapter aux différentes résolutions d'écran */
+}
+
+.filtre_sel img {
+  padding: 10px 10px 10px 10px;
+  /* Marge intérieure */
+  background-color: #deebff;
+  /* Indique une couleur de fond */
+  border-radius: 100%;
+  /* Bordure arrondie */
+}
+
+.filtre a:hover
+
+/* Quand la souris est sur le lien changement d'aspect */
+  {
+  color: #0065fc;
+  /* Couleur */
+}
+
+/* Fin de section des filtres */
+
+/*Debut section information */
+
+.info {
+  display: flex;
+  /*Les blocs se placent par défaut côte à côte */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  color: black;
+}
+
+.iconinfo {
+  margin: 0 10px 0 0;
+  /* Marge différentes s'applique aux quatre côtés du bloc, en bas, à gauche et à droite */
+  border-radius: 50%;
+  /* Bordure arrondie */
+  border: 1px solid #d9d9d9;
+  /* Super-propriété de bordure */
+  padding: 3px 8px;
+  /* Marge intérieure */
+  color: #0065fc;
+  /* Couleur */
+  font-size: 12px;
+  /* Indique la taille du texte */
+}
+
+/* Debut de la section 3*/
+
+/*Activités*/
+
+.flexColumnBetween {
+  display: flex;
+  /*les blocs se placent par défaut côte à côte*/
+  flex-direction: column;
+  /* Organisés sur une colonne */
+  justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+}
+
+.Activites:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  margin-top: 50px;
+  /* Marge intérieure en haut  */
+  margin-bottom: 50px;
+  /* Marge extérieure en bas */
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.blocActivites {
+  width: 100%;
+  /* Largeur */
+  height: 600px;
+  /* la hauteur du bloc */
+}
+
+.blocActivites2356 {
+  width: 23%;
+  /* Largeur */
+  height: 600px;
+  /* la hauteur du bloc */
+}
+
+/* Reglage bloc */
+
+.cubeActivites {
+  width: 23%;
+  /* Largeur */
+  border-radius: 15px 15px;
+  /* Bordure arrondie */
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
+}
+
+.cubeActivites2356 {
+  width: 100%;
+  /* Largeur */
+  border-radius: 15px 15px;
+  /* Bordure arrondie */
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
+}
+
+/* Fin de reglage bloc */
+
+.hauteurTitre {
+  height: 70px;
+  /* la hauteur du bloc */
+}
+
+.titreActivites {
+  display: flex;
+  /*Les blocs se placent par défaut côte à côte */
+  justify-content: flex-start;
+  /* Eléments alignés au début */
+  align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  padding-left: 5%;
+  /* Marge intérieure à gauche */
+  width: 95%;
+  /* Largeur */
+  font-size: medium;
+}
+
+.imgActivites1 {
+  background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 500px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 0px 0px;
+  /* Bordure arrondie */
+}
+
+.imgActivites2 {
+  background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 200px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie */
+}
+
+.imgActivites3 {
+  background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 200px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie */
+}
+
+.imgActivites4 {
+  background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 500px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie */
+}
+
+.imgActivites5 {
+  background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 200px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie */
+}
+
+.imgActivites6 {
+  background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
+  background-position: center;
+  /* Votre fond sera placé au centre */
+  width: 100%;
+  /* Largeur */
+  height: 200px;
+  /* la hauteur du bloc */
+  border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie */
+}
+
+footer {
+  color: black;
+  /* Couleur */
+  display: flex;
+  /* Les blocs se placent par défaut côte à côte */
+  flex-wrap: wrap;
+  /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
+  border: 2px solid #d9d9d9;
+  /* Super-propriété de bordure */
+  padding: 10px 10px 10px 10px;
+  /* Marge intérieure */
+  margin: auto;
+  /* Marge en haut */
+  width: 100%;
+  justify-content: space-between;
+  /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  background-color: #f2f2f2;
+  /* Indique une couleur de fond */
+  font-size: medium;
+  align-items: baseline
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: left;
+  line-height: 2em;
+}
+
+h4 {
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+p {
+  font-weight: lighter;
+  margin: 9px 0px;
+}
