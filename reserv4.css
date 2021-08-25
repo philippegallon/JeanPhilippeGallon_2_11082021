@@ -6,39 +6,77 @@
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 
-  search {
+  .search {
     flex-direction: column;
+  }
+
+  nav
+  {
+      width: auto;
+      text-align: left;
+  }
+  
+  nav ul
+  {
+      flex-direction: column;
+  }
+
+  nav li
+  {
+      padding-left: 4px;
+      flex-direction: column;
+  }
+  
+  nav a
+  {
+      font-size: 1.1em;
+      flex-direction: column;
+  }
+  
+  nav a:hover
+  {
+      border-bottom: 0;
+      flex-direction: column;
+  }
+
+   body {
+    flex-direction: column;
+    background-color: black;
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    text-align: left;
   }
 
   header {
     flex-direction: column;
   }
 
-  conteneur_block_hebergements {
+  .conteneur_block_hebergements {
     flex-direction: column;
   }
 
   footer {
     flex-direction: column;
   }
-
 }
 
 /* General */
 
-html,
-body {
+html, body {
   font-family: raleway, Arial, Helvetica, sans-serif;
   /* Nom de police */
-  font-weight: 600;
-  /* Epaisseur de la police de carctère 500px */
   margin: auto;
   /* Super-propriété de marge automatique */
 }
 
 body {
   margin: auto;
-  width: 1400px;
+  width: 1300px;
 }
 
 .flex-container {
@@ -68,8 +106,8 @@ body {
   /*les blocs se placent par défaut côte à côte*/
   justify-content: space-between;
   /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
-  align-items: center;
-  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  align-items: stretch;
+  /*Un alignement sur l'axe secondaire permet de étirer complètement l'élément dans le conteneur */
 }
 
 .flexColumnCentre {
@@ -173,8 +211,6 @@ body {
 .hebergement {
   color: #0065fc;
   /* Couleur */
-  background-color: #f2f2f2;
-  /* Indiquer une couleur de fond */
 }
 
 .svg {
@@ -247,22 +283,16 @@ header li {
   /* marge intérieure en haut en px */
   display: flex;
   /* les blocs se placent par défaut côte à côte */
-  width: 8em;
+  width: 12em;
   /* Largeur (Sachant que 1em est un texte a une taille normale) */
 }
 
-header li a:hover
-
-/* Quand la souris est sur le lien changement d'aspect */
-  {
+header li a:hover { /* Quand la souris est sur le lien changement d'aspect */
   color: #0065fc;
   /* Couleur */
 }
 
-header li:hover
-
-/* Quand la souris est sur le lien changement d'aspect */
-  {
+header li:hover { /* Quand la souris est sur le lien changement d'aspect */
   border-top: 3px solid #0065fc;
   /* Mettre des bordures différentes en haut du cadre */
 }
@@ -274,7 +304,7 @@ header a {
   /* Couleur */
   margin-right: 10px;
   /* marge extérieure à droite */
-}
+  }
 
 .register {
   color: #0065fc;
@@ -408,18 +438,14 @@ h3 {
   /* Indique une couleur de fond */
 }
 
-.hebergement_contener:hover {
-  /* Quand la souris est sur le lien changement d'aspect */
-  cursor: pointer;
-  transform: scale(1.02);
-}
-
 .hebergement_contener {
   display: flex;
   /* Les blocs se placent par défaut côte à côte */
   flex-wrap: wrap;
   /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   justify-content: space-between;
+  margin-top: 10px;
+ 
 }
 
 .heberg_texte {
@@ -433,9 +459,15 @@ h3 {
   border-radius: 25px 25px 25px 25px;
   margin: 10px 0px 10px 0px;
   color: black;
-  box-shadow: 5px 5px 10px -10px #deebff;
+  box-shadow: 5px 5px 10px #deebff;
   font-size: medium;
   box-sizing: border-box;
+}
+
+.hebergements_miniature:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .conteneur_block {
@@ -557,27 +589,38 @@ h3 {
   justify-content: space-between;
   align-items: center;
   display: flex;
-}
+ }
 
 .populaires_miniature {
   display: flex;
   background-color: white;
   /* width: 100%; */
-  height: auto;
+  height: 140px;
   padding: 5px;
   /* background-size: cover; */
   background-position: 10px 50px;
   border-radius: 15px 15px 15px 15px;
-  margin: 20px 0px;
+  margin-bottom: 40px;
+  margin-top: 20px;
   color: black;
-  /* Couleur */
   box-shadow: 5px 5px 10px #deebff;
   font-size: medium;
+  }
+
+.populaires_miniature:last-child {
+  margin-bottom: 0px;
+} 
+
+
+.populaires_miniature:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .populaire_contener {
 
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
   width: 27%;
   /* Largeur */
   height: auto;
@@ -586,12 +629,6 @@ h3 {
   /* Bordure arrondie */
   background-color: #f2f2f2;
   /* Indique une couleur de fond */
-}
-
-.populaire_contener:hover {
-  /* Quand la souris est sur le lien changement d'aspect */
-  cursor: pointer;
-  transform: scale(1.02);
 }
 
 .sizePopulaires {
@@ -718,16 +755,6 @@ h3 {
   /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
 }
 
-.Activites:hover {
-  /* Quand la souris est sur le lien changement d'aspect */
-  margin-top: 50px;
-  /* Marge intérieure en haut  */
-  margin-bottom: 50px;
-  /* Marge extérieure en bas */
-  cursor: pointer;
-  transform: scale(1.02);
-}
-
 .blocActivites {
   width: 100%;
   /* Largeur */
@@ -751,7 +778,7 @@ h3 {
   /* Bordure arrondie */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
-}
+  }
 
 .cubeActivites2356 {
   width: 100%;
@@ -762,12 +789,25 @@ h3 {
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
 }
 
+.cubeActivites2356:hover, .cubeActivites:hover {
+      /* Quand la souris est sur le lien changement d'aspect */
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
 /* Fin de reglage bloc */
 
 .hauteurTitre {
   height: 70px;
   /* la hauteur du bloc */
 }
+
+.titreMarseille {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
 
 .titreActivites {
   display: flex;
@@ -791,7 +831,7 @@ h3 {
   /* Votre fond sera placé au centre */
   width: 100%;
   /* Largeur */
-  height: 500px;
+  height: 100%;
   /* la hauteur du bloc */
   border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie */
@@ -833,7 +873,7 @@ h3 {
   /* Votre fond sera placé au centre */
   width: 100%;
   /* Largeur */
-  height: 500px;
+  height: 530px;
   /* la hauteur du bloc */
   border-radius: 15px 15px 15px 15px;
   /* Bordure arrondie */
@@ -874,14 +914,14 @@ footer {
   /* Les blocs se placent par défaut côte à côte */
   flex-wrap: wrap;
   /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
-  border: 2px solid #d9d9d9;
+  border: 2px #d9d9d9;
   /* Super-propriété de bordure */
   padding: 10px 10px 10px 10px;
   /* Marge intérieure */
-  margin: auto;
+  margin: 50px 1px 30px 1px;;
   /* Marge en haut */
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   background-color: #f2f2f2;
   /* Indique une couleur de fond */
@@ -896,11 +936,13 @@ ul {
 li {
   text-align: left;
   line-height: 2em;
+  justify-content: center;
 }
 
 h4 {
   justify-content: space-between;
   padding-left: 40px;
+  font-weight: bold;
 }
 
 p {
