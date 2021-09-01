@@ -3,71 +3,12 @@
   src: url("fonts.googleapis.com/css2? family= Raleway:wght@500 & display=swap") format("ttf");
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 
-  .search {
-    flex-direction: column;
-  }
-
-  nav
-  {
-      width: auto;
-      text-align: left;
-  }
-  
-  nav ul
-  {
-      flex-direction: column;
-  }
-
-  nav li
-  {
-      padding-left: 4px;
-      flex-direction: column;
-  }
-  
-  nav a
-  {
-      font-size: 1.1em;
-      flex-direction: column;
-  }
-  
-  nav a:hover
-  {
-      border-bottom: 0;
-      flex-direction: column;
-  }
-
-   body {
-    flex-direction: column;
-    background-color: black;
-    font-size: 1.2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    width: auto;
-    text-align: left;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  .conteneur_block_hebergements {
-    flex-direction: column;
-  }
-
-  footer {
-    flex-direction: column;
-  }
-}
 
 /* General */
 
-html, body {
+html,
+body {
   font-family: raleway, Arial, Helvetica, sans-serif;
   /* Nom de police */
   margin: auto;
@@ -287,12 +228,14 @@ header li {
   /* Largeur (Sachant que 1em est un texte a une taille normale) */
 }
 
-header li a:hover { /* Quand la souris est sur le lien changement d'aspect */
+header li a:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
   color: #0065fc;
   /* Couleur */
 }
 
-header li:hover { /* Quand la souris est sur le lien changement d'aspect */
+header li:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
   border-top: 3px solid #0065fc;
   /* Mettre des bordures différentes en haut du cadre */
 }
@@ -304,7 +247,7 @@ header a {
   /* Couleur */
   margin-right: 10px;
   /* marge extérieure à droite */
-  }
+}
 
 .register {
   color: #0065fc;
@@ -420,6 +363,7 @@ input {
 h3 {
   margin: 10px 0px 0px 0px;
 }
+
 .conteneur_block_hebergements {
   display: flex;
   /*Les blocs se placent par défaut côte à côte */
@@ -445,7 +389,7 @@ h3 {
   /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   justify-content: space-between;
   margin-top: 10px;
- 
+
 }
 
 .heberg_texte {
@@ -589,7 +533,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   display: flex;
- }
+}
 
 .populaires_miniature {
   display: flex;
@@ -605,11 +549,11 @@ h3 {
   color: black;
   box-shadow: 5px 5px 10px #deebff;
   font-size: medium;
-  }
+}
 
 .populaires_miniature:last-child {
   margin-bottom: 0px;
-} 
+}
 
 
 .populaires_miniature:hover {
@@ -778,7 +722,7 @@ h3 {
   /* Bordure arrondie */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
-  }
+}
 
 .cubeActivites2356 {
   width: 100%;
@@ -789,11 +733,12 @@ h3 {
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
 }
 
-.cubeActivites2356:hover, .cubeActivites:hover {
-      /* Quand la souris est sur le lien changement d'aspect */
-    cursor: pointer;
-    transform: scale(1.02);
-  }
+.cubeActivites2356:hover,
+.cubeActivites:hover {
+  /* Quand la souris est sur le lien changement d'aspect */
+  cursor: pointer;
+  transform: scale(1.02);
+}
 
 /* Fin de reglage bloc */
 
@@ -918,7 +863,8 @@ footer {
   /* Super-propriété de bordure */
   padding: 10px 10px 10px 10px;
   /* Marge intérieure */
-  margin: 50px 1px 30px 1px;;
+  margin: 50px 1px 30px 1px;
+  ;
   /* Marge en haut */
   width: 100%;
   justify-content: space-around;
@@ -948,4 +894,91 @@ h4 {
 p {
   font-weight: lighter;
   margin: 9px 0px;
+}
+
+@media all and (min-width: 320px) and (max-width: 1023px) {
+  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+  .search {
+    justify-content: center;
+  }
+
+  .category-head {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .filters {
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: yellow;
+    width: auto;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    width: auto;
+    text-align: left;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    padding-left: 4px;
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 1.1em;
+    flex-direction: column;
+  }
+
+  nav a:hover {
+    border-bottom: 0;
+    flex-direction: column;
+  }
+
+  body {
+    color: black;
+    background-color: yellow;
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .conteneur_block {
+    flex-direction: column-reverse;
+  }
+
+  .populaire_contener {
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    width: auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .conteneur_block_hebergements {
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    width: auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }
