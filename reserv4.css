@@ -911,7 +911,6 @@ p {
   .filters {
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: yellow;
     width: auto;
     align-items: flex-start;
   }
@@ -943,7 +942,6 @@ p {
 
   body {
     color: black;
-    background-color: yellow;
     font-size: 1.2em;
     width: 100%;
   }
@@ -951,7 +949,6 @@ p {
   header {
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
     width: auto;
     align-items: flex-start;
   }
@@ -963,22 +960,70 @@ p {
   .populaire_contener {
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
     width: auto;
     align-items: flex-start;
     flex-wrap: wrap;
-  }
+    padding-bottom: 50px;
+    border-radius: 0px;
+}
 
   .conteneur_block_hebergements {
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
     width: auto;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+.hebergement_contener {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: stretch;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+  }
+
+.hebergements_miniature {
+    width: 100%;
+}
+
+.Activites {
+  margin: 0px 30px 0px 30px;
+}
+
+  .activitesection {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
     flex-wrap: wrap;
   }
 
+  .flexBetween {
+    flex-direction:column;
+    width: auto;
+
+  }
+  .cubeActivites {
+    width: 100%;
+  }
+
+.blocActivites2356 {
+    width: 100%;
+    height: auto;
+  }
+
+.blocActivites {
+  height: auto;
+}
+.imgActivites1, .imgActivites2, .imgActivites3, .imgActivites4, .imgActivites5, .imgActivites6 {
+  width: 100%;
+  height: 200px;
+}
+ 
   footer {
     flex-direction: column;
   }
+
 }
