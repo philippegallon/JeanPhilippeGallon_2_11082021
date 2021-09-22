@@ -190,7 +190,6 @@ body {
   height: 12px;
   /* Hauteur du bloc en pixels */
 }
-}
 
 h1 {
   font-size: 1.4em;
@@ -976,19 +975,23 @@ p {
     width: auto;
   }
 
+  .flex-container {
+    width: 100%;
+  }
+
   .menu {
-    padding-right: 20px;
-    /* Marge intérieure droite */
-    padding-left: 20px;
-    /* Marge intérieure gauche */
     width: 50%;
     padding-top: 44px;
-    /* Marge intérieure en haut */
-    margin-right: 25px;
-    /* Marge extérieure à droite en pixels */
     padding-bottom: 44px;
-    /* Marge intérieure en bas */
+    font-size: 15px;
+    text-align: center;
+    display: block;
   }
+
+  .menu:last-child {
+    width: 0;
+  }
+
 
   .searchbutton {
     display: none;
@@ -1008,7 +1011,7 @@ p {
 
   .sinscrire {
     position: absolute;
-    top: 47px;
+    top: 45px; 
     right: 0px;
   }
 
@@ -1036,7 +1039,7 @@ p {
   nav {
     flex-direction: column;
     /* Organisés sur une colonne */
-    width: auto;
+    width: 100%;
     text-align: left;
     /* Texte alignement horizontal à gauche */
   }
@@ -1068,7 +1071,8 @@ p {
   }
 
   nav a:hover {
-    border-bottom: 0; /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
+    border-bottom: 0;
+    /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
     flex-direction: column;
     /* Organisés sur une colonne */
   }
@@ -1097,6 +1101,7 @@ p {
     /* Quand la souris est sur le lien changement d'aspect */
     border-bottom: 3px solid #0065fc;
     /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
+    border-top: none;
   }
 
   .conteneur_block {
