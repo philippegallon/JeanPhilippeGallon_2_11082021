@@ -3,8 +3,6 @@
   src: url("fonts.googleapis.com/css2? family= Raleway:wght@500 & display=swap") format("ttf");
 }
 
-
-
 /* General */
 
 html,
@@ -12,22 +10,26 @@ body {
   font-family: raleway, Arial, Helvetica, sans-serif;
   /* Nom de police */
   margin: auto;
-  /* Super-propriété de marge automatique */
+  /* Super-propriété de marge extérieure automatique en pixels */
 }
 
 body {
   margin: auto;
+  /* Super-propriété de marge extérieure automatique en pixels */
   width: 1300px;
+  /* Largeur en pixels */
 }
 
 .flex-container {
   display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
 }
 
 .flexCentre {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: center;
+  /* alignés au centre */
   /* Alignés au centre */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
@@ -35,7 +37,7 @@ body {
 
 .flexAround {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-around;
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: center;
@@ -44,19 +46,20 @@ body {
 
 .flexBetween {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
   /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   align-items: stretch;
-  /*Un alignement sur l'axe secondaire permet de étirer complètement l'élément dans le conteneur */
+  /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
 }
 
 .flexColumnCentre {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: column;
   /* Organisés sur une colonne */
   justify-content: center;
+  /* alignés au centre */
   /* Alignés au centre */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
@@ -64,7 +67,7 @@ body {
 
 .flexColumnAround {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: column;
   /* Organisés sur une colonne */
   justify-content: space-around;
@@ -88,12 +91,12 @@ body {
 
 .colorBleu {
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
 }
 
 .colorBleuClair {
   color: #deebff;
-  /* Couleur */
+  /* Couleur blanc */
 }
 
 /* Recherches */
@@ -105,67 +108,88 @@ body {
 
 .search {
   display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
   border: 1px solid #d9d9d9;
   border-radius: 20px;
+  /* Bordure arrondie en pixels */
   width: 38%;
+  /* Largeur en pourcentage */
   height: 55px;
+  /* Hauteur du bloc en pixels */
   justify-content: space-between;
 }
 
 .mapmarker {
   background-color: #F2F2F2;
+  /* Indique une couleur de fond blanc */
   padding: 17px 18px 18px 18px;
+  /* Marge intérieure en pixels */
   border-radius: 20px 0px 0px 20px;
+  /* Bordure arrondie en pixels */
   font-size: 20px;
+  /* Indique la taille du texte */
 }
 
 .research {
   display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
   width: 100%;
+  /* Largeur en pourcentage */
 }
 
 .searchbutton {
   justify-content: right;
   color: white;
+  /* Couleur blanche */
   background-color: #0065FC;
+  /* Indique une couleur de fond bleue */
   border-radius: 0px 20px 20px 0px;
+  /* Bordure arrondie en pixels */
   font-size: medium;
+  /* Indique la taille du texte */
   padding: 15px;
+  /* Marge intérieure en pixels */
 }
 
 .searchfield {
   color: black;
+  /* Couleur noir */
   font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
   text-align: left;
+  /* Texte alignement horizontal à gauche */
   font-size: medium;
+  /* Indique la taille du texte */
   padding: 2px 2px 2px 20px;
+  /* Marge intérieure en pixels */
 }
 
 .sinscrire {
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
   font-weight: bolder;
   /* le texte sera en gras */
 }
 
 .hebergement {
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
 }
 
 .svg {
   width: 20px;
-  /* Largeur */
+  /* Largeuren pixels */
   height: 20px;
-  /* la hauteur du bloc 20px */
+  /* Hauteur du bloc en pixels */
 }
 
 .svg_min {
   width: 12px;
-  /* Largeur */
+  /* Largeuren pixels */
   height: 12px;
-  /* la hauteur du bloc 12px */
+  /* Hauteur du bloc en pixels */
+}
 }
 
 h1 {
@@ -177,15 +201,15 @@ h1 {
 
 header {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: row;
   /* Organisés sur une ligne (par défaut) */
   justify-content: space-between;
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: baseline;
-  /* Alignés sur la ligne de base (semblable à flex-start) */
+  /*Un alignement au début sur la ligne de base dans le conteneur */
   margin-top: -16px;
-  /* Marge en haut */
+  /* Marge extérieure en haut en pixels */
 }
 
 header img {
@@ -197,18 +221,18 @@ header img {
 
 header div {
   display: flex;
-  /* les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: row;
   /* Organisés sur une ligne (par défaut) */
   list-style-type: none;
   /* Qui permet de retirer l'image ronde servant de puce */
   align-items: baseline;
-  /* Alignés sur la ligne de base (semblable à flex-start) */
+  /*Un alignement au début sur la ligne de base dans le conteneur */
 }
 
 header ul {
   display: flex;
-  /* les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-around;
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   flex-direction: row;
@@ -221,9 +245,9 @@ header li {
   border-top: 3px solid rgba(0, 0, 0, 0);
   /* diférente bordure du haut en ligne noir solide */
   padding-top: 35px;
-  /* marge intérieure en haut en px */
+  /* marge intérieure en haut en pixels */
   display: flex;
-  /* les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   width: 12em;
   /* Largeur (Sachant que 1em est un texte a une taille normale) */
 }
@@ -231,7 +255,7 @@ header li {
 header li a:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
 }
 
 header li:hover {
@@ -244,14 +268,14 @@ header a {
   text-decoration: none;
   /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
   color: black;
-  /* Couleur */
+  /* Couleur noir */
   margin-right: 10px;
-  /* marge extérieure à droite */
+  /* Marge extérieure à droite en pixels */
 }
 
 .register {
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
 }
@@ -260,20 +284,20 @@ header a {
 
 .nav_form {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: flex-start;
   /* Eléments alignés au début */
   height: 40px;
-  /* Hauteur */
+  /* Hauteur du bloc en pixels */
 }
 
 form img {
   background-color: #f2f2f2;
-  /* Indiquer une couleur de fond */
+  /* Couleur de fond blanc */
   padding: 14px 14px 14px 14px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   border-radius: 1em 0 0 1em;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 input {
@@ -285,126 +309,145 @@ input {
 
 .form_summ {
   border-radius: 0 1em 1em 0;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   background-color: #0065fc;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond bleue */
   color: #fff;
-  /*Couleur*/
+  /*Couleur blanc */
 }
 
 /* Debut section filtre */
 
 .filters {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
 }
 
+.fas.fa-search {
+  display: none;
+  /* Pour masquer les éléments qui ont la classe « fas.fa-search » */
+}
+
 .category-head {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
 }
 
 .filterdescription {
   color: black;
-  /* Couleur */
+  /* Couleur noir */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
 }
 
 .icontextfilters {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   border: 2px solid #d9d9d9;
   /* Super-propriété de bordure */
   border-radius: 20px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   padding: 10px 10px 10px 10px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   margin: 10px;
-  /* Marge en haut */
+  /* Marge extérieure en pixels */
   justify-content: space-between;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   color: black;
   /* Couleur noir */
   font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
 }
 
 /* Hebergements */
 
 .sizeHebergements {
   flex-wrap: wrap;
+  /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   flex: 2;
   /* Deux fois 200% plus de taille que l'élément .sizePopulaires */
   height: 650px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   margin-right: 20px;
-  /* marge extérieure à droite */
+  /* marge extérieure à droite en pixels */
   border-radius: 10px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
 }
 
 .star {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
   margin-bottom: 10px;
+  /* Marge extérieure en bas en pixels */
 }
 
 .star_white {
   color: #f2f2f2;
-  /* Couleur */
+  /* Couleur blanc */
 }
 
 h3 {
   margin: 10px 0px 0px 0px;
+  /* Marge extérieure en pixels */
 }
 
 .conteneur_block_hebergements {
   display: flex;
-  /*Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: column;
-  /* Positionnement sur une colonne */
+  /* Organisés sur une colonne */
   justify-content: flex-start;
   /* Eléments alignés au début */
   padding: 30px;
+  /* Marge intérieure en pixels */
   width: 60%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: auto;
   /* la hauteur du bloc automatique */
   border-radius: 20px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
 }
 
 .hebergement_contener {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-wrap: wrap;
   /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   justify-content: space-between;
   margin-top: 10px;
+  /* Marge extérieure en haut en pixels */
 
 }
 
 .heberg_texte {
   padding: 0px 0px 0px 10px;
+  /* Marge intérieure en pixels */
 }
 
 .hebergements_miniature {
   background-color: white;
+  /* Indique une couleur de fond blanc */
   width: 30%;
+  /* Largeur en pourcentage */
   padding: 4px 4px 4px 4px;
+  /* Marge intérieure en pixels */
   border-radius: 25px 25px 25px 25px;
+  /* Bordure arrondie en pixels */
   margin: 10px 0px 10px 0px;
+  /* Marge extérieure en pixels */
   color: black;
+  /* Couleur noir */
   box-shadow: 5px 5px 10px #deebff;
   font-size: medium;
+  /* Indique la taille du texte */
   box-sizing: border-box;
 }
 
@@ -416,41 +459,43 @@ h3 {
 
 .conteneur_block {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
   /* Eléments alignés au début */
   align-items: stretch;
-  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
   flex-direction: row;
   /* Positionnement sur une ligne (par défaut) */
   margin-bottom: 10px;
-  /* Marge extérieure en bas */
+  /* Marge extérieure en bas en pixels */
   margin-top: 10px;
-  /* Marge intérieure en haut  */
+  /* Marge intérieure en haut en pixels  */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: auto;
   /* la hauteur du bloc automatique */
   flex-wrap: wrap;
+  /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
 }
 
 .eHebergements {
   width: 30%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: auto;
   /* la hauteur du bloc automatique */
   background-color: white;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
   padding: 1%;
+  /* Marge intérieure en pixels */
   border-radius: 20px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .cubeDetailsHebergements {
   width: 95%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
 }
 
 .imgHebergements {
@@ -459,11 +504,11 @@ h3 {
   background-position: left;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 120px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 20px 20px 0 0;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgHebergements1 {
@@ -492,22 +537,24 @@ h3 {
 
 .afficher_plus {
   color: black;
+  /* Couleur noir */
   /* Couleur */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
   text-decoration: none;
   margin-top: 25px;
+  /* Marge extérieure en haut en pixels */
 }
 
 /* Les plus populaires */
 
 .imagespopulaires {
   width: 40%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   border-radius: 10px 0px 0px 10px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   margin: 0% 5% 0% 0%;
-  /* Marge en haut */
+  /* Marge extérieure en pixels */
   background-size: cover;
   background-position: center;
   /* Positionnement de l'image de fond = centrer */
@@ -527,32 +574,44 @@ h3 {
 
 .texte_populaires {
   width: 60%;
+  /* Largeur en pourcentage */
 }
 
 .box1 {
   justify-content: space-between;
   align-items: center;
+  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
   display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
 }
 
 .populaires_miniature {
   display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
   background-color: white;
-  /* width: 100%; */
+  /* Indique une couleur de fond blanc */
   height: 140px;
+  /* Hauteur du bloc en pixels */
   padding: 5px;
+  /* Marge intérieure en pixels */
   /* background-size: cover; */
   background-position: 10px 50px;
   border-radius: 15px 15px 15px 15px;
+  /* Bordure arrondie en pixels */
   margin-bottom: 40px;
+  /* Marge extérieure en bas en pixels */
   margin-top: 20px;
+  /* Marge extérieure en haut en pixels */
   color: black;
+  /* Couleur noir */
   box-shadow: 5px 5px 10px #deebff;
   font-size: medium;
+  /* Indique la taille du texte */
 }
 
 .populaires_miniature:last-child {
   margin-bottom: 0px;
+  /* Marge extérieure en bas en pixels */
 }
 
 
@@ -565,74 +624,77 @@ h3 {
 .populaire_contener {
 
   padding: 30px 30px 0px 30px;
+  /* Marge intérieure en pixels */
   width: 27%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: auto;
   /* la hauteur du bloc automatique */
   border-radius: 20px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
 }
 
 .sizePopulaires {
   flex: 1;
   /* Une fois 100% plus de taille que l'élément .sizeHebergements */
   height: 650px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   margin-left: 20px;
-  /* Marge extérieure à gauche 30px */
+  /* Marge extérieure à gauche en pixels */
   border-radius: 10px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
 }
 
 /* Filtres */
 
 .filtre {
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   max-width: 60%;
   /* largeur maximale 60%, dimensions « limites » pour que notre site s'adapte aux différentes résolutions d'écran */
   font-weight: bold;
-  /* le texte sera en gras */
+  /* Epaisseur de la police de carctère en gras */
   margin-top: 50px;
-  /* Marge extérieure en haut 50px */
+  /* Marge extérieure en haut en pixels */
 }
 
 .iconefilter {
   background-color: #deebff;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
   margin: -12px 10px -12px -12px;
-  /* Marge différentes s'applique aux quatre côtés du bloc, en bas, à gauche et à droite */
+  /* Marge extérieure en pixels s'applique en haut, à droite, en bas, à gauche */
   padding: 12px;
+  /* Marge intérieure en pixels */
   border-radius: 50%;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pourcentage */
   color: #0065FC;
+  /* Couleur bleue */
 }
 
 .filtre_sel P {
   display: flex;
-  /*Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
   flex-wrap: nowrap;
   /* lorsqu'ils n'ont plus la place les blocs, pas de retour à la ligne (par défaut) */
   margin-left: 30px;
-  /* Marge extérieure à gauche 30px */
+  /* Marge extérieure à gauche en pixels */
   padding: 0 10px 0 10px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   border: 2px solid #f2f2f2;
   /* Super-propriété de bordure */
   border-radius: 200px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   text-decoration: none;
   /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
   color: black;
-  /* Couleur */
+  /* Couleur noir */
   max-height: 38px;
   /* Hauteur maximale pour s'adapter aux différentes résolutions d'écran */
 }
@@ -644,11 +706,11 @@ h3 {
 
 .filtre_sel img {
   padding: 10px 10px 10px 10px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   background-color: #deebff;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
   border-radius: 100%;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pourcentage */
 }
 
 .filtre a:hover
@@ -656,7 +718,7 @@ h3 {
 /* Quand la souris est sur le lien changement d'aspect */
   {
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
 }
 
 /* Fin de section des filtres */
@@ -665,23 +727,24 @@ h3 {
 
 .info {
   display: flex;
-  /*Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
   color: black;
+  /* Couleur noir */
 }
 
 .iconinfo {
   margin: 0 10px 0 0;
-  /* Marge différentes s'applique aux quatre côtés du bloc, en bas, à gauche et à droite */
+  /* Marge extérieure en pixels */
   border-radius: 50%;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pourcentage */
   border: 1px solid #d9d9d9;
   /* Super-propriété de bordure */
   padding: 3px 8px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   color: #0065fc;
-  /* Couleur */
+  /* Couleur bleue */
   font-size: 12px;
   /* Indique la taille du texte */
 }
@@ -692,7 +755,7 @@ h3 {
 
 .flexColumnBetween {
   display: flex;
-  /*les blocs se placent par défaut côte à côte*/
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-direction: column;
   /* Organisés sur une colonne */
   justify-content: space-between;
@@ -701,14 +764,14 @@ h3 {
 
 .blocActivites {
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 600px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
 }
 
 .blocActivites2356 {
   width: 23%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 600px;
   /* la hauteur du bloc */
 }
@@ -717,18 +780,18 @@ h3 {
 
 .cubeActivites {
   width: 23%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   border-radius: 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
 }
 
 .cubeActivites2356 {
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   border-radius: 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
 }
@@ -749,14 +812,14 @@ h3 {
 
 .titreMarseille {
   margin-bottom: 20px;
+  /* Marge extérieure en bas en pixels */
   margin-top: 30px;
+  /* Marge extérieure en haut en pixels */
 }
-
-
 
 .titreActivites {
   display: flex;
-  /*Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: flex-start;
   /* Eléments alignés au début */
   align-items: center;
@@ -764,8 +827,9 @@ h3 {
   padding-left: 5%;
   /* Marge intérieure à gauche */
   width: 95%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   font-size: medium;
+  /* Indique la taille du texte */
 }
 
 .imgActivites1 {
@@ -775,11 +839,11 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 100%;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pourcentage */
   border-radius: 15px 15px 0px 0px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgActivites2 {
@@ -789,11 +853,11 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 200px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgActivites3 {
@@ -803,11 +867,11 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 200px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgActivites4 {
@@ -817,11 +881,11 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 530px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgActivites5 {
@@ -831,11 +895,11 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 200px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 .imgActivites6 {
@@ -845,34 +909,36 @@ h3 {
   background-position: center;
   /* Votre fond sera placé au centre */
   width: 100%;
-  /* Largeur */
+  /* Largeur en pourcentage */
   height: 200px;
-  /* la hauteur du bloc */
+  /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 15px 15px;
-  /* Bordure arrondie */
+  /* Bordure arrondie en pixels */
 }
 
 footer {
   color: black;
-  /* Couleur */
+  /* Couleur noir */
   display: flex;
-  /* Les blocs se placent par défaut côte à côte */
+  /* les blocs se placent horizontalement côte à côte par défaut */
   flex-wrap: wrap;
   /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
   border: 2px #d9d9d9;
   /* Super-propriété de bordure */
   padding: 10px 10px 10px 10px;
-  /* Marge intérieure */
+  /* Marge intérieure en pixels */
   margin: 50px 1px 30px 1px;
-  ;
-  /* Marge en haut */
+  /* Marge extérieure en pixels */
   width: 100%;
+  /* Largeur en pourcentage */
   justify-content: space-around;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond */
+  /* Indique une couleur de fond blanc */
   font-size: medium;
-  align-items: baseline
+  /* Indique la taille du texte */
+  align-items: baseline;
+  /*Un alignement au début sur la ligne de base dans le conteneur */
 }
 
 ul {
@@ -881,19 +947,24 @@ ul {
 
 li {
   text-align: left;
+  /* Texte alignement horizontal à gauche */
   line-height: 2em;
   justify-content: center;
+  /* alignés au centre */
 }
 
 h4 {
   justify-content: space-between;
   padding-left: 40px;
+  /* Marge intérieure gauche */
   font-weight: bold;
+  /* Epaisseur de la police de carctère en gras */
 }
 
 p {
   font-weight: lighter;
   margin: 9px 0px;
+  /* Marge extérieure en pixels */
 }
 
 @media all and (min-width: 320px) and (max-width: 1023px) {
@@ -901,129 +972,245 @@ p {
 
   .search {
     justify-content: center;
+    /* alignés au centre */
+    width: auto;
+  }
+
+  .menu {
+    padding-right: 20px;
+    /* Marge intérieure droite */
+    padding-left: 20px;
+    /* Marge intérieure gauche */
+    width: 50%;
+    padding-top: 44px;
+    /* Marge intérieure en haut */
+    margin-right: 25px;
+    /* Marge extérieure à droite en pixels */
+    padding-bottom: 44px;
+    /* Marge intérieure en bas */
+  }
+
+  .searchbutton {
+    display: none;
+  }
+
+  .fas.fa-search {
+    background-color: #0065FC;
+    /* Indique une couleur de fond bleue */
+    border-radius: 10px;
+    /* Bordure arrondie en pixels */
+    padding: 16px;
+    /* Marge intérieure en pixels */
+    color: white;
+    /* Couleur blanc */
+    display: block;
+  }
+
+  .sinscrire {
+    position: absolute;
+    top: 47px;
+    right: 0px;
   }
 
   .category-head {
     flex-direction: row;
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   }
 
   .filters {
     flex-direction: column;
+    /* Organisés sur une colonne */
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     width: auto;
     align-items: flex-start;
+    /* les blocs sont alignés au début côte à côte */
+  }
+
+  h1 {
+    font-size: 1.3em;
+    /* Indique la taille du texte */
   }
 
   nav {
     flex-direction: column;
+    /* Organisés sur une colonne */
     width: auto;
     text-align: left;
+    /* Texte alignement horizontal à gauche */
   }
 
   nav ul {
-    flex-direction: column;
+    display: flex;
+    /* les blocs se placent horizontalement côte à côte par défaut */
+    list-style-type: none;
+    width: 100%;
+    /* Largeur en pourcentage */
+    padding: 0;
+    /* Marge intérieure en pixels */
+    text-align: center;
+    /* Texte alignement horizontal au centre */
   }
 
   nav li {
     padding-left: 4px;
+    /* Marge intérieure gauche */
     flex-direction: column;
+    /* Organisés sur une colonne */
   }
 
   nav a {
     font-size: 1.1em;
+    /* Indique la taille du texte */
     flex-direction: column;
+    /* Organisés sur une colonne */
   }
 
   nav a:hover {
-    border-bottom: 0;
+    border-bottom: 0; /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
     flex-direction: column;
+    /* Organisés sur une colonne */
   }
 
   body {
     color: black;
+    /* Couleur noir */
     font-size: 1.2em;
+    /* Indique la taille du texte */
     width: 100%;
+    /* Largeur en pourcentage */
   }
 
   header {
     flex-direction: column;
-    justify-content: center;
+    /* Organisés sur une colonne */
     width: auto;
+    /* Largeur automatique */
     align-items: flex-start;
+    /* les blocs sont alignés au début côte à côte */
+    padding: 30px;
+    /* Marge intérieure en pixels */
+  }
+
+  header li:hover {
+    /* Quand la souris est sur le lien changement d'aspect */
+    border-bottom: 3px solid #0065fc;
+    /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
   }
 
   .conteneur_block {
     flex-direction: column-reverse;
+    /* Organisés sur une colonne avec les éléments inversés */
   }
 
   .populaire_contener {
     flex-direction: column;
+    /* Organisés sur une colonne */
     justify-content: center;
+    /* alignés au centre */
     width: auto;
+    /* Largeur automatique */
     align-items: flex-start;
+    /* les blocs sont alignés au début côte à côte */
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     padding-bottom: 50px;
+    /* Marge intérieure en bas */
     border-radius: 0px;
-}
+    /* Bordure arrondie en pixels */
+  }
 
   .conteneur_block_hebergements {
     flex-direction: column;
+    /* Organisés sur une colonne */
     justify-content: center;
+    /* alignés au centre */
     width: auto;
+    /* Largeur automatique */
     align-items: stretch;
+    /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     background-color: transparent;
+    /* Indique une couleur de fond transparente */
   }
 
-.hebergement_contener {
+  .hebergement_contener {
     flex-direction: column;
+    /* Organisés sur une colonne */
     justify-content: center;
+    /* alignés au centre */
     width: auto;
+    /* Largeur automatique */
     align-items: stretch;
+    /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     font-size: 1.2em;
+    /* Indique la taille du texte */
   }
 
-.hebergements_miniature {
+  .hebergements_miniature {
     width: 100%;
-}
+    /* Largeur en pourcentage */
+  }
 
-.Activites {
-  margin: 0px 30px 0px 30px;
-}
+  .Activites {
+    margin: 0px 30px 0px 30px;
+    /* Marge extérieure en pixels */
+  }
 
   .activitesection {
     flex-direction: column;
+    /* Organisés sur une colonne */
     justify-content: center;
+    /* alignés au centre */
     width: auto;
+    /* Largeur automatique */
     flex-wrap: wrap;
+    /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   }
 
   .flexBetween {
-    flex-direction:column;
+    flex-direction: column;
+    /* Organisés sur une colonne */
     width: auto;
-
+    /* Largeur automatique */
   }
+
   .cubeActivites {
     width: 100%;
+    /* Largeur en pourcentage */
   }
 
-.blocActivites2356 {
+  .blocActivites2356 {
     width: 100%;
+    /* Largeur en pourcentage */
     height: auto;
+    /* Hauteur du bloc en pourcentage */
   }
 
-.blocActivites {
-  height: auto;
-}
-.imgActivites1, .imgActivites2, .imgActivites3, .imgActivites4, .imgActivites5, .imgActivites6 {
-  width: 100%;
-  height: 200px;
-}
- 
+  .blocActivites {
+    height: auto;
+    /* Hauteur du bloc en pourcentage */
+  }
+
+  .imgActivites1,
+  .imgActivites2,
+  .imgActivites3,
+  .imgActivites4,
+  .imgActivites5,
+  .imgActivites6 {
+    width: 100%;
+    /* Largeur en pourcentage */
+    height: 200px;
+    /* Hauteur du bloc en pixels */
+  }
+
   footer {
     flex-direction: column;
+    /* Organisés sur une colonne */
   }
 
 }
