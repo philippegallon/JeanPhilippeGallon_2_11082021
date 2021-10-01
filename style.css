@@ -30,7 +30,6 @@ body {
   /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: center;
   /* alignés au centre */
-  /* Alignés au centre */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
 }
@@ -48,7 +47,7 @@ body {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
-  /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: stretch;
   /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
 }
@@ -59,7 +58,6 @@ body {
   flex-direction: column;
   /* Organisés sur une colonne */
   justify-content: center;
-  /* alignés au centre */
   /* Alignés au centre */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
@@ -76,7 +74,7 @@ body {
 
 .decorationNone {
   text-decoration: none;
-  /* Ne pas souligner le texte */
+  /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
 }
 
 .bordureNone {
@@ -117,6 +115,7 @@ body {
   height: 55px;
   /* Hauteur du bloc en pixels */
   justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
 }
 
 .mapmarker {
@@ -134,12 +133,14 @@ body {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   width: 100%;
   /* Largeur en pourcentage */
 }
 
 .searchbutton {
   justify-content: right;
+  /* Les éléments sont regroupés vers le bord droit du conteneur */
   color: white;
   /* Couleur blanche */
   background-color: #0065FC;
@@ -303,7 +304,7 @@ input {
   border: none;
   /* Super-propriété de bordure */
   font-weight: 700;
-  /* Epaisseur de la police de carctère 700px */
+  /* Epaisseur de la police de carctère 700 pixels */
 }
 
 .form_summ {
@@ -353,7 +354,7 @@ input {
   margin: 10px;
   /* Marge extérieure en pixels */
   justify-content: space-between;
-  /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   color: black;
   /* Couleur noir */
   font-weight: bold;
@@ -421,6 +422,7 @@ h3 {
   flex-wrap: wrap;
   /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   margin-top: 10px;
   /* Marge extérieure en haut en pixels */
 
@@ -445,22 +447,26 @@ h3 {
   color: black;
   /* Couleur noir */
   box-shadow: 5px 5px 10px #deebff;
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
   font-size: medium;
   /* Indique la taille du texte */
   box-sizing: border-box;
+  /* Définit la façon dont la hauteur et la largeur totale d'un élément est calculée, les propriétés width et height incluent le contenu, le remplissage (padding), la bordure, mais pas la marge */
 }
 
 .hebergements_miniature:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   cursor: pointer;
+  /* Pointeur fréquemment utilisé sur les liens ou les boutons */
   transform: scale(1.02);
+  /* Permet de modifier la taille d'un élément avec un facteur d'échelle sur deux dimensions, pas de changement d'échelle avec un léger agrandissement */
 }
 
 .conteneur_block {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
-  /* Eléments alignés au début */
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: stretch;
   /*Un alignement des éléments qui sont étirés sur tout l'axe dans le conteneur (valeur par défaut) */
   flex-direction: row;
@@ -541,6 +547,7 @@ h3 {
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
   text-decoration: none;
+  /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
   margin-top: 25px;
   /* Marge extérieure en haut en pixels */
 }
@@ -578,6 +585,7 @@ h3 {
 
 .box1 {
   justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
   display: flex;
@@ -617,11 +625,12 @@ h3 {
 .populaires_miniature:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   cursor: pointer;
+  /* Pointeur fréquemment utilisé sur les liens ou les boutons */
   transform: scale(1.02);
+  /* Permet de modifier la taille d'un élément avec un facteur d'échelle sur deux dimensions, pas de changement d'échelle avec un léger agrandissement */
 }
 
 .populaire_contener {
-
   padding: 30px 30px 0px 30px;
   /* Marge intérieure en pixels */
   width: 27%;
@@ -653,7 +662,7 @@ h3 {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   justify-content: space-between;
-  /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   max-width: 60%;
   /* largeur maximale 60%, dimensions « limites » pour que notre site s'adapte aux différentes résolutions d'écran */
   font-weight: bold;
@@ -758,7 +767,7 @@ h3 {
   flex-direction: column;
   /* Organisés sur une colonne */
   justify-content: space-between;
-  /* les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
 }
 
 .blocActivites {
@@ -799,7 +808,9 @@ h3 {
 .cubeActivites:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   cursor: pointer;
+  /* Pointeur fréquemment utilisé sur les liens ou les boutons */
   transform: scale(1.02);
+  /* Permet de modifier la taille d'un élément avec un facteur d'échelle sur deux dimensions, pas de changement d'échelle avec un léger agrandissement */
 }
 
 /* Fin de reglage bloc */
@@ -942,18 +953,21 @@ footer {
 
 ul {
   list-style-type: none;
+  /* Qui permet de retirer l'image ronde servant de puce */
 }
 
 li {
   text-align: left;
   /* Texte alignement horizontal à gauche */
   line-height: 2em;
+  /* Hauteur de ligne avec deux fois la taille */
   justify-content: center;
   /* alignés au centre */
 }
 
 h4 {
   justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   padding-left: 40px;
   /* Marge intérieure gauche */
   font-weight: bold;
@@ -962,6 +976,7 @@ h4 {
 
 p {
   font-weight: lighter;
+  /* Epaisseur de la police de carctère légère */
   margin: 9px 0px;
   /* Marge extérieure en pixels */
 }
@@ -973,28 +988,37 @@ p {
     justify-content: center;
     /* alignés au centre */
     width: auto;
+    /* Largeur automatique */
   }
 
   .flex-container {
     width: 100%;
+    /* Largeur en pourcentage */
   }
 
   .menu {
     width: 50%;
-    padding-top: 44px;
-    padding-bottom: 44px;
+    /* Largeur en pourcentage */
+    padding-top: 24px;
+    /* marge intérieure en haut en pixels */
+    padding-bottom: 10px;
+    /* Marge intérieure en bas en pixels */
     font-size: 15px;
+    /* Indique la taille du texte en pixels */
     text-align: center;
+    /* Texte alignement horizontal à droite */
     display: block;
+    /* Eléments en forme de blocs, se positionnent les uns en dessous des autres et peuvent être redimensionnés les uns en dessous des autres */
   }
 
   .menu:last-child {
     width: 0;
+    /* Largeur en pourcentage */
   }
-
 
   .searchbutton {
     display: none;
+    /* Pour masquer les éléments qui ont la classe « searchbutton » */
   }
 
   .fas.fa-search {
@@ -1007,16 +1031,21 @@ p {
     color: white;
     /* Couleur blanc */
     display: block;
+    /* Eléments en forme de blocs, se positionnent les uns en dessous des autres et peuvent être redimensionnés les uns en dessous des autres */
   }
 
   .sinscrire {
     position: absolute;
-    top: 45px; 
+    /* positionnement absolu */
+    top: 45px;
+    /* positionnement absolu en haut en pixels */
     right: 0px;
+    /* positionnement absolu à droite en pixels */
   }
 
   .category-head {
     flex-direction: row;
+    /* Organisés sur une ligne */
     flex-wrap: wrap;
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   }
@@ -1027,8 +1056,14 @@ p {
     flex-wrap: wrap;
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     width: auto;
+
     align-items: flex-start;
     /* les blocs sont alignés au début côte à côte */
+    padding: 0px 20px;
+  }
+
+  .icontextfilters {
+    margin-left: 0;
   }
 
   h1 {
@@ -1040,6 +1075,7 @@ p {
     flex-direction: column;
     /* Organisés sur une colonne */
     width: 100%;
+    /* Largeur en pourcentage */
     text-align: left;
     /* Texte alignement horizontal à gauche */
   }
@@ -1048,6 +1084,7 @@ p {
     display: flex;
     /* les blocs se placent horizontalement côte à côte par défaut */
     list-style-type: none;
+    /* Qui permet de retirer l'image ronde servant de puce */
     width: 100%;
     /* Largeur en pourcentage */
     padding: 0;
@@ -1093,8 +1130,12 @@ p {
     /* Largeur automatique */
     align-items: flex-start;
     /* les blocs sont alignés au début côte à côte */
-    padding: 30px;
+    padding: 30px 0px 0px 0px;
     /* Marge intérieure en pixels */
+  }
+
+  header img {
+    margin-left: 20px;
   }
 
   header li:hover {
@@ -1102,11 +1143,19 @@ p {
     border-bottom: 3px solid #0065fc;
     /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
     border-top: none;
+    /* Ne pas mettre des bordures différentes en haut du cadre en ligne bleue solide */
+  }
+  .recherche {
+    padding: 0px 20px;
   }
 
   .conteneur_block {
     flex-direction: column-reverse;
     /* Organisés sur une colonne avec les éléments inversés */
+  }
+
+  .info {
+    margin-left: 20px;
   }
 
   .populaire_contener {
@@ -1121,7 +1170,7 @@ p {
     flex-wrap: wrap;
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     padding-bottom: 50px;
-    /* Marge intérieure en bas */
+    /* Marge intérieure en bas en pixels */
     border-radius: 0px;
     /* Bordure arrondie en pixels */
   }
@@ -1187,6 +1236,7 @@ p {
   .cubeActivites {
     width: 100%;
     /* Largeur en pourcentage */
+    margin: 0px 0px 20px 0px;
   }
 
   .blocActivites2356 {
@@ -1216,6 +1266,7 @@ p {
   footer {
     flex-direction: column;
     /* Organisés sur une colonne */
+    margin: 50px 0px 0px 0px;
   }
 
 }
