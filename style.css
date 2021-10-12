@@ -89,25 +89,26 @@ body {
 
 .colorBleu {
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
 }
 
 .colorBleuClair {
   color: #deebff;
-  /* Couleur blanc */
+  /* Couleur blanche de la police en hexadécimal */
 }
 
 /* Recherches */
 
 #search {
   border: 1px solid #f2f2f2;
-  /* Super-propriété de bordure */
+  /* Super-propriété de bordure, bordure de 1 pixel et couleur blanche en hexadécimal  */
 }
 
 .search {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d9d9d9; 
+  /* Super-propriété de bordure, bordure de 1 pixel et couleur blanche en hexadécimal */
   border-radius: 20px;
   /* Bordure arrondie en pixels */
   width: 38%;
@@ -120,13 +121,13 @@ body {
 
 .mapmarker {
   background-color: #F2F2F2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
   padding: 17px 18px 18px 18px;
   /* Marge intérieure en pixels */
   border-radius: 20px 0px 0px 20px;
   /* Bordure arrondie en pixels */
   font-size: 20px;
-  /* Indique la taille du texte */
+  /* Indique la taille du texte en pixels */
 }
 
 .research {
@@ -142,40 +143,40 @@ body {
   justify-content: right;
   /* Les éléments sont regroupés vers le bord droit du conteneur */
   color: white;
-  /* Couleur blanche */
+  /* Couleur blanche de la police */
   background-color: #0065FC;
-  /* Indique une couleur de fond bleue */
+  /* Indique une couleur de fond bleue en hexadécimal */
   border-radius: 0px 20px 20px 0px;
   /* Bordure arrondie en pixels */
   font-size: medium;
-  /* Indique la taille du texte */
+  /* Indique la taille moyenne du texte */
   padding: 15px;
   /* Marge intérieure en pixels */
 }
 
 .searchfield {
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
   text-align: left;
   /* Texte alignement horizontal à gauche */
   font-size: medium;
-  /* Indique la taille du texte */
+  //* Indique la taille moyenne du texte */
   padding: 2px 2px 2px 20px;
   /* Marge intérieure en pixels */
 }
 
 .sinscrire {
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
   font-weight: bolder;
   /* le texte sera en gras */
 }
 
 .hebergement {
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
 }
 
 .svg {
@@ -194,7 +195,7 @@ body {
 
 h1 {
   font-size: 1.4em;
-  /* Indique la taille du texte */
+  /* Indique la taille relative en pourcentage */
 }
 
 /* Header */
@@ -243,7 +244,7 @@ header ul {
 
 header li {
   border-top: 3px solid rgba(0, 0, 0, 0);
-  /* diférente bordure du haut en ligne noir solide */
+  /* diférente bordure du haut en ligne noir en hexadécimal solide de 3 pixels */ 
   padding-top: 35px;
   /* marge intérieure en haut en pixels */
   display: flex;
@@ -255,27 +256,27 @@ header li {
 header li a:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
 }
 
 header li:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   border-top: 3px solid #0065fc;
-  /* Mettre des bordures différentes en haut du cadre */
+  /* Mettre des bordures différentes en haut du cadre, bordure de 3 pixels et couleur bleue en hexadécimal */ 
 }
 
 header a {
   text-decoration: none;
   /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   margin-right: 10px;
   /* Marge extérieure à droite en pixels */
 }
 
 .register {
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
 }
@@ -293,27 +294,27 @@ header a {
 
 form img {
   background-color: #f2f2f2;
-  /* Couleur de fond blanc */
+  /* Couleur de fond blanc en hexadécimal */
   padding: 14px 14px 14px 14px;
   /* Marge intérieure en pixels */
   border-radius: 1em 0 0 1em;
-  /* Bordure arrondie en pixels */
+  /* Bordure arrondie taille relative en pourcentage */
 }
 
 input {
   border: none;
-  /* Super-propriété de bordure */
+  /* Pas de bordure */
   font-weight: 700;
   /* Epaisseur de la police de carctère 700 pixels */
 }
 
 .form_summ {
   border-radius: 0 1em 1em 0;
-  /* Bordure arrondie en pixels */
+  /* Bordure arrondie taille relative en pourcentage */
   background-color: #0065fc;
-  /* Indique une couleur de fond bleue */
+  /* Indique une couleur de fond bleue en hexadécimal */
   color: #fff;
-  /*Couleur blanc */
+  /*Couleur blanche de la police en hexadécimal */
 }
 
 /* Debut section filtre */
@@ -337,7 +338,7 @@ input {
 
 .filterdescription {
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
 }
@@ -346,7 +347,7 @@ input {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   border: 2px solid #d9d9d9;
-  /* Super-propriété de bordure */
+  /* Super-propriété de bordure, bordure de 2 pixels et de couleur blanche en hexadécimal */
   border-radius: 20px;
   /* Bordure arrondie en pixels */
   padding: 10px 10px 10px 10px;
@@ -356,7 +357,7 @@ input {
   justify-content: space-between;
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
 }
@@ -375,21 +376,21 @@ input {
   border-radius: 10px;
   /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
 }
 
 .star {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
   margin-bottom: 10px;
   /* Marge extérieure en bas en pixels */
 }
 
 .star_white {
   color: #f2f2f2;
-  /* Couleur blanc */
+  /* Couleur blanche de la police en hexadécimal */
 }
 
 h3 {
@@ -413,7 +414,7 @@ h3 {
   border-radius: 20px;
   /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
 }
 
 .hebergement_contener {
@@ -445,11 +446,11 @@ h3 {
   margin: 10px 0px 10px 0px;
   /* Marge extérieure en pixels */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   box-shadow: 5px 5px 10px #deebff;
-  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre en hexadécimal */
   font-size: medium;
-  /* Indique la taille du texte */
+  /* Indique la taille moyenne du texte */
   box-sizing: border-box;
   /* Définit la façon dont la hauteur et la largeur totale d'un élément est calculée, les propriétés width et height incluent le contenu, le remplissage (padding), la bordure, mais pas la marge */
 }
@@ -500,14 +501,14 @@ h3 {
   width: 95%;
   /* Largeur en pourcentage */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
 }
 
 .imgHebergements {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: left;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné à gauche */
   width: 100%;
   /* Largeur en pourcentage */
   height: 120px;
@@ -518,32 +519,37 @@ h3 {
 
 .imgHebergements1 {
   background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  /* Image Hebergements1 */
 }
 
 .imgHebergements2 {
   background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  /* Image Hebergements2 */
 }
 
 .imgHebergements3 {
   background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  /* Image Hebergements3 */
 }
 
 .imgHebergements4 {
   background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  /* Image Hebergements4 */
 }
 
 .imgHebergements5 {
   background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  /* Image Hebergements5 */
 }
 
 .imgHebergements6 {
   background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  /* Image Hebergements6 */
 }
 
 .afficher_plus {
   color: black;
-  /* Couleur noir */
-  /* Couleur */
+  /* Couleur noir de la police */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
   text-decoration: none;
@@ -562,20 +568,24 @@ h3 {
   margin: 0% 5% 0% 0%;
   /* Marge extérieure en pixels */
   background-size: cover;
+  /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Positionnement de l'image de fond = centrer */
+  /* Votre fond sera positionné au centre */
 }
 
 .imgPopulaires1 {
   background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+   /* Image Populaires1 */
 }
 
 .imgPopulaires2 {
   background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  /* Image Populaires2 */
 }
 
 .imgPopulaires3 {
   background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  /* Image Populaires3 */
 }
 
 .texte_populaires {
@@ -601,8 +611,8 @@ h3 {
   /* Hauteur du bloc en pixels */
   padding: 5px;
   /* Marge intérieure en pixels */
-  /* background-size: cover; */
   background-position: 10px 50px;
+  /* Votre fond sera positionné sur l'axe des X à 10 pixels et sur l'axe des Y à 50 pixels */
   border-radius: 15px 15px 15px 15px;
   /* Bordure arrondie en pixels */
   margin-bottom: 40px;
@@ -610,10 +620,11 @@ h3 {
   margin-top: 20px;
   /* Marge extérieure en haut en pixels */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   box-shadow: 5px 5px 10px #deebff;
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre en hexadécimal */
   font-size: medium;
-  /* Indique la taille du texte */
+  /* Indique la taille moyenne du texte */
 }
 
 .populaires_miniature:last-child {
@@ -640,7 +651,7 @@ h3 {
   border-radius: 20px;
   /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
 }
 
 .sizePopulaires {
@@ -653,7 +664,7 @@ h3 {
   border-radius: 10px;
   /* Bordure arrondie en pixels */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
 }
 
 /* Filtres */
@@ -673,7 +684,7 @@ h3 {
 
 .iconefilter {
   background-color: #deebff;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
   margin: -12px 10px -12px -12px;
   /* Marge extérieure en pixels s'applique en haut, à droite, en bas, à gauche */
   padding: 12px;
@@ -681,7 +692,7 @@ h3 {
   border-radius: 50%;
   /* Bordure arrondie en pourcentage */
   color: #0065FC;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
 }
 
 .filtre_sel P {
@@ -696,13 +707,13 @@ h3 {
   padding: 0 10px 0 10px;
   /* Marge intérieure en pixels */
   border: 2px solid #f2f2f2;
-  /* Super-propriété de bordure */
+  /* Super-propriété de bordure, bordure de 2 pixels et de couleur blanche en hexadécimal */
   border-radius: 200px;
   /* Bordure arrondie en pixels */
   text-decoration: none;
   /* Pas de soulignement, ligne au-dessus, barré ou clignotant */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   max-height: 38px;
   /* Hauteur maximale pour s'adapter aux différentes résolutions d'écran */
 }
@@ -716,7 +727,7 @@ h3 {
   padding: 10px 10px 10px 10px;
   /* Marge intérieure en pixels */
   background-color: #deebff;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
   border-radius: 100%;
   /* Bordure arrondie en pourcentage */
 }
@@ -726,7 +737,7 @@ h3 {
 /* Quand la souris est sur le lien changement d'aspect */
   {
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
 }
 
 /* Fin de section des filtres */
@@ -739,7 +750,7 @@ h3 {
   align-items: center;
   /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
 }
 
 .iconinfo {
@@ -748,13 +759,13 @@ h3 {
   border-radius: 50%;
   /* Bordure arrondie en pourcentage */
   border: 1px solid #d9d9d9;
-  /* Super-propriété de bordure */
+  /* Super-propriété de bordure, bordure solide de 1 pixel et de couleur blanche en hexadécimal */
   padding: 3px 8px;
   /* Marge intérieure en pixels */
   color: #0065fc;
-  /* Couleur bleue */
+  /* Couleur bleue de la police en hexadécimal */
   font-size: 12px;
-  /* Indique la taille du texte */
+  /* Indique la taille du texte en pixels */
 }
 
 /* Debut de la section 3*/
@@ -792,7 +803,7 @@ h3 {
   border-radius: 15px 15px;
   /* Bordure arrondie en pixels */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
-  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre en hexadécimal */
 }
 
 .cubeActivites2356 {
@@ -801,7 +812,7 @@ h3 {
   border-radius: 15px 15px;
   /* Bordure arrondie en pixels */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
-  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre */
+  /* Les ombres de la boîte, horizontal, vertical, adoucissement du dégradé, couleur de l'ombre en hexadécimal */
 }
 
 .cubeActivites2356:hover,
@@ -839,7 +850,7 @@ h3 {
   width: 95%;
   /* Largeur en pourcentage */
   font-size: medium;
-  /* Indique la taille du texte */
+  //* Indique la taille moyenne du texte */
 }
 
 .imgActivites1 {
@@ -847,7 +858,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 100%;
@@ -861,7 +872,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 200px;
@@ -875,7 +886,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 200px;
@@ -889,7 +900,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 530px;
@@ -903,7 +914,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 200px;
@@ -917,7 +928,7 @@ h3 {
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
-  /* Votre fond sera placé au centre */
+  /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
   height: 200px;
@@ -928,13 +939,13 @@ h3 {
 
 footer {
   color: black;
-  /* Couleur noir */
+  /* Couleur noir de la police */
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
   flex-wrap: wrap;
   /* Les éléments vont à la ligne lorsqu'il n'y a plus la place */
   border: 2px #d9d9d9;
-  /* Super-propriété de bordure */
+  /* Super-propriété de bordure, bordure de 2 pixels et de couleur blanche en hexadécimal */
   padding: 10px 10px 10px 10px;
   /* Marge intérieure en pixels */
   margin: 50px 1px 30px 1px;
@@ -944,9 +955,9 @@ footer {
   justify-content: space-around;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   background-color: #f2f2f2;
-  /* Indique une couleur de fond blanc */
+  /* Indique une couleur de fond blanc en hexadécimal */
   font-size: medium;
-  /* Indique la taille du texte */
+  /* Indique la taille moyenne du texte */
   align-items: baseline;
   /*Un alignement au début sur la ligne de base dans le conteneur */
 }
@@ -1023,13 +1034,13 @@ p {
 
   .fas.fa-search {
     background-color: #0065FC;
-    /* Indique une couleur de fond bleue */
+    /* Indique une couleur de fond bleue en hexadécimal */
     border-radius: 10px;
     /* Bordure arrondie en pixels */
     padding: 16px;
     /* Marge intérieure en pixels */
     color: white;
-    /* Couleur blanc */
+    /* Couleur blanche de la police */
     display: block;
     /* Eléments en forme de blocs, se positionnent les uns en dessous des autres et peuvent être redimensionnés les uns en dessous des autres */
   }
@@ -1064,11 +1075,12 @@ p {
 
   .icontextfilters {
     margin-left: 0;
+    /* Marge extérieure à gauche en pixels */
   }
 
   h1 {
     font-size: 1.3em;
-    /* Indique la taille du texte */
+    /* Indique la taille relative en pourcentage */
   }
 
   nav {
@@ -1102,7 +1114,7 @@ p {
 
   nav a {
     font-size: 1.1em;
-    /* Indique la taille du texte */
+    /* Indique la taille relative en pourcentage */
     flex-direction: column;
     /* Organisés sur une colonne */
   }
@@ -1116,9 +1128,9 @@ p {
 
   body {
     color: black;
-    /* Couleur noir */
+    /* Couleur noir de la police */
     font-size: 1.2em;
-    /* Indique la taille du texte */
+    /* Indique la taille relative en pourcentage */
     width: 100%;
     /* Largeur en pourcentage */
   }
@@ -1136,12 +1148,13 @@ p {
 
   header img {
     margin-left: 20px;
+    /* Marge extérieure à gauche en pixels */
   }
 
   header li:hover {
     /* Quand la souris est sur le lien changement d'aspect */
     border-bottom: 3px solid #0065fc;
-    /* Spécifier le style, l'épaisseur, la couleur de la bordure basse */
+    /* Super-propriété de bordure basse, bordure solide de 3 pixels et de couleur bleue en hexadécimal */
     border-top: none;
     /* Ne pas mettre des bordures différentes en haut du cadre en ligne bleue solide */
   }
@@ -1156,6 +1169,7 @@ p {
 
   .info {
     margin-left: 20px;
+    /* Marge extérieure à gauche en pixels */
   }
 
   .populaire_contener {
@@ -1202,7 +1216,7 @@ p {
     flex-wrap: wrap;
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     font-size: 1.2em;
-    /* Indique la taille du texte */
+    /* Indique la taille relative en pourcentage */
   }
 
   .hebergements_miniature {
