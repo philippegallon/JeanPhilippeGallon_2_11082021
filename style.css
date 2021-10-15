@@ -107,7 +107,7 @@ body {
 .search {
   display: flex;
   /* les blocs se placent horizontalement côte à côte par défaut */
-  border: 1px solid #d9d9d9; 
+  border: 1px solid #d9d9d9;
   /* Super-propriété de bordure, bordure de 1 pixel et couleur blanche en hexadécimal */
   border-radius: 20px;
   /* Bordure arrondie en pixels */
@@ -244,7 +244,7 @@ header ul {
 
 header li {
   border-top: 3px solid rgba(0, 0, 0, 0);
-  /* diférente bordure du haut en ligne noir en hexadécimal solide de 3 pixels */ 
+  /* diférente bordure du haut en ligne noir en hexadécimal solide de 3 pixels */
   padding-top: 35px;
   /* marge intérieure en haut en pixels */
   display: flex;
@@ -262,7 +262,7 @@ header li a:hover {
 header li:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   border-top: 3px solid #0065fc;
-  /* Mettre des bordures différentes en haut du cadre, bordure de 3 pixels et couleur bleue en hexadécimal */ 
+  /* Mettre des bordures différentes en haut du cadre, bordure de 3 pixels et couleur bleue en hexadécimal */
 }
 
 header a {
@@ -575,7 +575,7 @@ h3 {
 
 .imgPopulaires1 {
   background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-   /* Image Populaires1 */
+  /* Image Populaires1 */
 }
 
 .imgPopulaires2 {
@@ -1158,6 +1158,7 @@ p {
     border-top: none;
     /* Ne pas mettre des bordures différentes en haut du cadre en ligne bleue solide */
   }
+
   .recherche {
     padding: 0px 20px;
   }
