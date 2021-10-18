@@ -1,5 +1,6 @@
 @font-face {
   font-family: (raleway), sans-serif;
+  /* Nom de police */
   src: url("fonts.googleapis.com/css2? family= Raleway:wght@500 & display=swap") format("ttf");
 }
 
@@ -60,7 +61,7 @@ body {
   justify-content: center;
   /* Alignés au centre */
   align-items: center;
-  /*Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
+  /* Un alignement sur l'axe secondaire permet de centrer complètement l'élément dans le conteneur */
 }
 
 .flexColumnAround {
@@ -162,7 +163,7 @@ body {
   text-align: left;
   /* Texte alignement horizontal à gauche */
   font-size: medium;
-  //* Indique la taille moyenne du texte */
+  /* Indique la taille moyenne du texte */
   padding: 2px 2px 2px 20px;
   /* Marge intérieure en pixels */
 }
@@ -937,6 +938,8 @@ h3 {
   /* Bordure arrondie en pixels */
 }
 
+ /* Footer */
+
 footer {
   color: black;
   /* Couleur noir de la police */
@@ -991,6 +994,8 @@ p {
   margin: 9px 0px;
   /* Marge extérieure en pixels */
 }
+
+/* Version responsive */
 
 @media all and (min-width: 320px) and (max-width: 1023px) {
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
