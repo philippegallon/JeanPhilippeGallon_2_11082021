@@ -850,6 +850,7 @@ h3 {
 
 .imgActivites1 {
   background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  /* Image imgActivites1 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -864,6 +865,7 @@ h3 {
 
 .imgActivites2 {
   background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  /* Image imgActivites2 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -878,6 +880,7 @@ h3 {
 
 .imgActivites3 {
   background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  /* Image imgActivites3 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -892,6 +895,7 @@ h3 {
 
 .imgActivites4 {
   background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  /* Image imgActivites4 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -906,6 +910,7 @@ h3 {
 
 .imgActivites5 {
   background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  /* Image imgActivites5 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -920,6 +925,7 @@ h3 {
 
 .imgActivites6 {
   background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  /* Image imgActivites6 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
   background-position: center;
@@ -1066,10 +1072,11 @@ p {
     flex-wrap: wrap;
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
     width: auto;
-
+    /* Largeur automatique */
     align-items: flex-start;
     /* les blocs sont alignés au début côte à côte */
     padding: 0px 20px;
+    /* Marge intérieure en pixels */
   }
 
   .icontextfilters {
