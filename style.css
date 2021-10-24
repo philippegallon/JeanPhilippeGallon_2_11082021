@@ -728,7 +728,6 @@ h3 {
 }
 
 .filtre a:hover
-
 /* Quand la souris est sur le lien changement d'aspect */
   {
   color: #0065fc;
@@ -1167,6 +1166,7 @@ p {
 
   .recherche {
     padding: 0px 20px;
+    /* Marge intérieure en pixels */
   }
 
   .conteneur_block {
@@ -1258,6 +1258,7 @@ p {
     width: 100%;
     /* Largeur en pourcentage */
     margin: 0px 0px 20px 0px;
+     /* Marge extérieure en pixels */
   }
 
   .blocActivites2356 {
@@ -1288,6 +1289,7 @@ p {
     flex-direction: column;
     /* Organisés sur une colonne */
     margin: 50px 0px 0px 0px;
+     /* Marge extérieure en pixels */
   }
 
 }
