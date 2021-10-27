@@ -357,6 +357,10 @@ input {
   /* Epaisseur de la police de carctère en gras */
 }
 
+.icontextfilters:hover {
+  background-color: #deebff;
+}
+
 /* Hebergements */
 
 .sizeHebergements {
