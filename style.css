@@ -877,7 +877,7 @@ h3 {
   /* Largeur en pourcentage */
   height: 200px;
   /* Hauteur du bloc en pixels */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
 }
 
@@ -892,7 +892,7 @@ h3 {
   /* Largeur en pourcentage */
   height: 200px;
   /* Hauteur du bloc en pixels */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
 }
 
@@ -907,7 +907,7 @@ h3 {
   /* Largeur en pourcentage */
   height: 530px;
   /* Hauteur du bloc en pixels */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
 }
 
@@ -922,7 +922,7 @@ h3 {
   /* Largeur en pourcentage */
   height: 200px;
   /* Hauteur du bloc en pixels */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
 }
 
@@ -937,7 +937,7 @@ h3 {
   /* Largeur en pourcentage */
   height: 200px;
   /* Hauteur du bloc en pixels */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
 }
 
