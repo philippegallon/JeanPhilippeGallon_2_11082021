@@ -11,8 +11,13 @@ body {
 body {
   margin: auto;
   /* Super-propriété de marge extérieure automatique en pixels */
+  width: auto;
+  /* Largeur en pixels automatique*/
+}
+
+main {
+  margin: auto;
   width: 1300px;
-  /* Largeur en pixels */
 }
 
 .flex-container {
@@ -204,8 +209,10 @@ header {
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   align-items: baseline;
   /*Un alignement au début sur la ligne de base dans le conteneur */
+  margin: auto;
   margin-top: -16px;
   /* Marge extérieure en haut en pixels */
+  width: 1300px;
 }
 
 header img {
@@ -590,6 +597,12 @@ h3 {
 .texte_populaires {
   width: 60%;
   /* Largeur en pourcentage */
+  display: flex;
+  /* les blocs se placent horizontalement côte à côte par défaut */
+  flex-direction: column;
+  /* Organisés sur une colonne */
+  justify-content: space-between;
+  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
 }
 
 .box1 {
@@ -732,6 +745,7 @@ h3 {
 }
 
 .filtre a:hover
+
 /* Quand la souris est sur le lien changement d'aspect */
   {
   color: #0065fc;
@@ -875,7 +889,7 @@ h3 {
   /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
-  height: 200px;
+  height: 280px;
   /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
@@ -886,11 +900,11 @@ h3 {
   /* Image imgActivites3 */
   background-size: cover;
   /* Permet d'ajuster la taille des images utilisées en arrière-plan et permet d'employer deux autres valeurs : contain et cover */
-  background-position: center;
+  background-position: center top;
   /* Votre fond sera positionné au centre */
   width: 100%;
   /* Largeur en pourcentage */
-  height: 200px;
+  height: 120px;
   /* Hauteur du bloc en pixels */
   border-radius: 15px 15px 0px 0px;
   /* Bordure arrondie en pixels */
@@ -941,7 +955,7 @@ h3 {
   /* Bordure arrondie en pixels */
 }
 
- /* Footer */
+/* Footer */
 
 footer {
   color: black;
@@ -956,8 +970,8 @@ footer {
   /* Marge intérieure en pixels */
   margin: 50px 1px 30px 1px;
   /* Marge extérieure en pixels */
-  width: 100%;
-  /* Largeur en pourcentage */
+  width: auto;
+  /* Largeur en pourcentage automatiquement*/
   justify-content: space-around;
   /*Pour changer l'alignement horizontal les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) */
   background-color: #f2f2f2;
@@ -1262,7 +1276,12 @@ p {
     width: 100%;
     /* Largeur en pourcentage */
     margin: 0px 0px 20px 0px;
-     /* Marge extérieure en pixels */
+    /* Marge extérieure en pixels */
+  }
+
+  .cubeActivites2356 {
+    margin: 0px 0px 20px 0px;
+    /* Marge extérieure en pixels */
   }
 
   .blocActivites2356 {
@@ -1293,7 +1312,7 @@ p {
     flex-direction: column;
     /* Organisés sur une colonne */
     margin: 50px 0px 0px 0px;
-     /* Marge extérieure en pixels */
+    /* Marge extérieure en pixels */
   }
 
 }
