@@ -17,7 +17,7 @@ body {
 
 main {
   margin: auto;
-  width: 1300px;
+  max-width: 1300px;
 }
 
 .flex-container {
@@ -115,12 +115,12 @@ main {
   /* Largeur en pourcentage */
   height: 55px;
   /* Hauteur du bloc en pixels */
-  justify-content: space-between;
-  /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
+  justify-content: flex-start;
+  /* les éléments sont positionnés du début de gauche à droite */
 }
 
 .mapmarker {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   /* Indique une couleur de fond blanc en hexadécimal */
   padding: 17px 18px 18px 18px;
   /* Marge intérieure en pixels */
@@ -144,7 +144,7 @@ main {
   /* Les éléments sont regroupés vers le bord droit du conteneur */
   color: white;
   /* Couleur blanche de la police */
-  background-color: #0065FC;
+  background-color: #0065fc;
   /* Indique une couleur de fond bleue en hexadécimal */
   border-radius: 0px 20px 20px 0px;
   /* Bordure arrondie en pixels */
@@ -165,6 +165,8 @@ main {
   /* Indique la taille moyenne du texte */
   padding: 2px 2px 2px 20px;
   /* Marge intérieure en pixels */
+  max-width: 100%;
+  /* largeur maximum en pixels */
 }
 
 .sinscrire {
@@ -212,7 +214,7 @@ header {
   margin: auto;
   margin-top: -16px;
   /* Marge extérieure en haut en pixels */
-  width: 1300px;
+  max-width: 1300px;
 }
 
 header img {
@@ -432,7 +434,6 @@ h3 {
   /* les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités */
   margin-top: 10px;
   /* Marge extérieure en haut en pixels */
-
 }
 
 .heberg_texte {
@@ -644,7 +645,6 @@ h3 {
   /* Marge extérieure en bas en pixels */
 }
 
-
 .populaires_miniature:hover {
   /* Quand la souris est sur le lien changement d'aspect */
   cursor: pointer;
@@ -703,7 +703,7 @@ h3 {
   /* Marge intérieure en pixels */
   border-radius: 50%;
   /* Bordure arrondie en pourcentage */
-  color: #0065FC;
+  color: #0065fc;
   /* Couleur bleue de la police en hexadécimal */
 }
 
@@ -1018,8 +1018,8 @@ p {
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 
   .search {
-    justify-content: center;
-    /* alignés au centre */
+    justify-content: flex-start;
+    /* alignés au début */
     width: auto;
     /* Largeur automatique */
   }
@@ -1049,13 +1049,17 @@ p {
     /* Largeur en pourcentage */
   }
 
+  .research {
+    max-width: 64%;
+  }
+
   .searchbutton {
     display: none;
     /* Pour masquer les éléments qui ont la classe « searchbutton » */
   }
 
   .fas.fa-search {
-    background-color: #0065FC;
+    background-color: #0065fc;
     /* Indique une couleur de fond bleue en hexadécimal */
     border-radius: 10px;
     /* Bordure arrondie en pixels */
@@ -1313,6 +1317,14 @@ p {
     /* Organisés sur une colonne */
     margin: 50px 0px 0px 0px;
     /* Marge extérieure en pixels */
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+
+  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+  .texte_populaires p {
+    font-size: 15px;
   }
 
 }
