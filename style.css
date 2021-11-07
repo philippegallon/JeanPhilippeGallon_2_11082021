@@ -345,6 +345,8 @@ input {
   /* Couleur noir de la police */
   font-weight: bold;
   /* Epaisseur de la police de carctère en gras */
+  font-size: 18px;
+  /* Indique la taille moyenne du texte en pixels */
 }
 
 .icontextfilters {
@@ -1087,6 +1089,15 @@ p {
     /* les éléments vont à la ligne lorsqu'il n'y a plus la place */
   }
 
+  .filterdescription {
+    color: black;
+    /* Couleur noir de la police */
+    font-weight: bold;
+    /* Epaisseur de la police de carctère en gras */
+    font-size: 18px;
+    /* Indique la taille moyenne du texte en pixels */
+  }
+
   .filters {
     flex-direction: column;
     /* Organisés sur une colonne */
@@ -1321,10 +1332,19 @@ p {
 }
 
 @media all and (min-width: 320px) and (max-width: 374px) {
-
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   .texte_populaires p {
     font-size: 15px;
+    /* Indique la taille moyenne du texte en pixels */
+  }
+ 
+  .filterdescription {
+    color: black;
+    /* Couleur noir de la police */
+    font-weight: bold;
+    /* Epaisseur de la police de carctère en gras */
+    font-size: 13px;
+    /* Indique la taille moyenne du texte en pixels */
   }
 
 }
